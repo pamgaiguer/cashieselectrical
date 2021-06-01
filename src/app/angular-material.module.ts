@@ -56,7 +56,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 
 const modules: any[] = [
-
   LayoutModule,
 
   MatAutocompleteModule,
@@ -100,12 +99,12 @@ const modules: any[] = [
 
   MatPaginatorModule,
   MatSortModule,
-  MatTableModule
-
+  MatTableModule,
 ];
 
 @NgModule({
-  imports: [ ...modules ],
-  exports: [ ...modules ]
+  imports: [...modules],
+  exports: [...modules],
+  declarations: [],
 })
 export class AngularMaterialModule {}

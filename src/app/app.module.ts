@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AngularMaterialModule } from './angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngularMaterialModule } from './shared/angular-material.module';
-import { HomeComponent } from './pages/home/home.component';
-import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { PagesModule } from './pages/pages.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NotfoundComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +22,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000',
     }),
+    PagesModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
