@@ -7,6 +7,6 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [HomeComponent, NotfoundComponent],
-  imports: [CommonModule, SharedModule, FlexLayoutModule],
+  imports: [CommonModule, SharedModule, FlexLayoutModule]
 })
 export class PagesModule {}

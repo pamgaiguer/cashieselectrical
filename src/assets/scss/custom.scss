@@ -1,0 +1,38 @@
+@import 'cashieselectrical/variables';
+@import 'cashieselectrical/mixins';
+@import 'cashieselectrical/typography';
+@import 'cashieselectrical/navbar';
+@import 'cashieselectrical/footer';
+@import 'cashieselectrical/pages';
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*html tags*/
+body {
+  a {
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      cursor: hover;
+    }
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+.form-control {
+  border-radius: 0;
+}
+.activebutton {
+  border-bottom: 2px solid black;
+}
+.navbar-logo {
+  width: 300px;
+}
